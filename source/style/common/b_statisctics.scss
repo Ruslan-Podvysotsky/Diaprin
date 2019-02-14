@@ -1,0 +1,270 @@
+.statistics{
+    padding: 12px 0 20px;
+    background-color: #fff;
+    & .title_orange{
+        color: #fd7532;
+    }
+    &__wrap{
+        margin-top: 41px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    &__cont{
+        width: 370px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    &__title{
+        font-size: 24px;
+        color: #222222;
+        font-weight: 500;
+        width: 100%;
+        &_color{
+            color: #3e599b;
+        }
+    }
+    &__item{
+        margin-top: 48px;
+        box-shadow: 0px 5px 16px 6px rgba(242,244,248,1);
+        border-radius: 7px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+        padding-bottom: 35px;
+        &::before{
+            content: '';
+            width: 100%;
+            height: 5px;
+            background-color: #3e599b;
+            border-radius: 7px 7px 0 0 ;
+            position: relative;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+        &.three{
+            padding-bottom: 60px;
+        }
+    }
+    &__img{
+        margin-top: -38px;
+        width: 139px;
+        height: 139px;
+        border: 5px solid #e3e9f3;
+        box-sizing: border-box;
+        border-radius: 50%;
+        &_before{
+            margin-top: 12px;
+            border: 5px solid #fde4d8;
+            position: relative;
+            &::before{
+                content: '';
+                width: 36px;
+                height: 36px;
+                background-image: url(../img/sadness.png);
+                position: absolute;
+                left: 50%;
+                transform: translate(-50%, 0);
+                bottom: -19px;
+            }
+        }
+    }
+    &__name{
+        font-size: 22px;
+        color: #222222;
+        font-weight: 500;
+        margin-top: 12px;
+    }
+    &__description{
+        font-size: 18px;
+        color: #444444;
+        width: 298px;
+        margin-top: 7px;
+        line-height: 1.4;
+        &_width{
+            margin-top: 27px;
+        }
+        &_weight{
+            color: #222222;
+            font-weight: 500;
+        }
+    }
+    &__line{
+        width: 100%;
+        height: 1px;
+        background-color: #adc2da;
+        position: relative;
+        margin: 33px 0;
+        &::before{
+            content: '';
+            width: 45px;
+            height: 45px;
+            background-color: #fff;
+            border-left: 1px solid #adc2da;
+            border-bottom: 1px solid #adc2da;
+            position: absolute;
+            left: calc(50% - 22.5px);
+            top: -22.5px;
+            transform: rotate(-45deg);
+        }
+        &::after{
+            content: '';
+            width: 31px;
+            height: 31px;
+            background-image: url(../img/time.png);
+            background-size: 100% 100%;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -20px);
+        }
+        &.one{
+            margin-top: 80px;
+        }
+        &.two{
+            margin-top: 30px;
+        }
+        &.three{
+            margin-top: 55px;   
+        }
+    }
+    &__subtitle{
+        width: 100%;
+        font-size: 27px;
+        color: #222222;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 32px;
+        z-index: 10;
+        position: relative;
+    }
+    &.section_elem::after{
+        bottom: -99px;
+    }
+}
+
+@media screen and (max-width: 1199px){
+    .statistics__cont{
+        width: 310px;
+    }
+    .statistics__title{
+        font-size: 21px;
+    }
+    .statistics__name{
+        font-size: 20px;
+    }
+    .statistics__description{
+        font-size: 17px;
+        width: 100%;
+        padding: 0 10px;
+    }
+    .statistics__line.two{
+        margin-top: 34px;
+    }
+    .statistics__line.three{
+        margin-top: 57px;
+    }
+    .statistics.section{
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 1023px){
+    .statistics__cont{
+        width: 240px;
+    }
+    .statistics__name{
+        width: 100%;
+        font-size: 18px;
+        margin-top: 5px;
+    }
+    .statistics__description{
+        font-size: 16px;
+        line-height: 1.2;
+    }
+    .statistics__title{
+        font-size: 18px;
+    }
+    .statistics__line.one{
+        margin-top: 87px;
+    }
+    .statistics__line.two{
+        margin-top: 30px;
+    }
+    .statistics__line.three{
+        margin-top: 87px;
+    }
+    .statistics__item.three{
+        padding-bottom: 73px;
+    }
+    .statistics.section{
+        padding: 40px 0;
+    }
+    .statistics__subtitle {
+        font-size: 21px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .statistics__wrap{
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .statistics__cont{
+        width: 300px;
+    }
+    .statistics__line.one{
+        margin-top: 68px;
+    }
+    .statistics__cont:last-child{
+        margin-top: 30px;
+    }
+    .statistics__item{
+        margin-top: 35px;
+    }
+    .statistics__line.three{
+        margin-top: 30px;
+    }
+    .statistics__item.three{
+        padding-bottom: 35px;
+    }
+    .statistics.section{
+        padding: 30px 0;
+    }
+}
+
+@media screen and (max-width: 639px){
+    .statistics__cont:nth-child(2){
+        margin-top: 30px;
+    }
+    .statistics__line.one{
+        margin-top: 30px;
+    }
+    .statistics__wrap{
+        margin-top: 15px;
+    }
+    .statistics__description_width{
+        margin-top: 18px;
+    }
+    .statistics__cont{
+        width: 100%;
+    }
+    .statistics.section{
+        padding: 25px 0;
+    }
+    .statistics__subtitle br{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 479px){
+    .statistics .title br{
+        display: none;
+    }
+}

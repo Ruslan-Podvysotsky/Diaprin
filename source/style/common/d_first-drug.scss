@@ -1,0 +1,177 @@
+.drug{
+    padding: 0px 0;
+    &.section_elem::before{
+        top: -135px;
+    }
+    &.section_elem::after{
+        bottom: -123px;
+    }
+    & .wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    & .title{
+        position: relative;
+    }
+
+    &__subtitle{
+        font-size: 22px;
+        color: #222222;
+        margin-top: 33px;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    &__cont{
+        width: 975px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 276px;
+        background-image: url(../img/drug_bg.png);
+        background-size: 100% 100%;
+        margin-top: 44px;
+        &-pack{
+            margin-left: -14px;
+            margin-top: -6px;
+            width: 256px;
+        }
+        &-food{
+            width: 282px;
+            margin-right: -1px;
+            margin-top: 6px;
+        }
+        &-desc{
+            font-size: 17px;
+            color: #222222;
+            text-align: center;
+            &_margin{
+                margin-right: -34px;
+            }
+        }
+        &-cent{
+            width: 90px;
+            height: 90px;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #123478;
+            border: 10px solid #e3e9f3;
+            border-radius: 50%;
+        }
+        &-equally{
+            color: #fff;
+            font-size: 70px;
+        }
+    }
+    &__description{
+        font-size: 18px;
+        color: #444444;
+        margin-top: 51px;
+        text-align: center;
+        font-style: italic;
+        position: relative;
+        z-index: 10;
+        &_color{
+            color: #123478;
+        }
+    }
+}
+
+@media screen and (max-width: 1199px){
+    .drug.section{
+        padding: 0;
+    }
+    .drug__subtitle{
+        margin-top: 20px;
+    }
+
+}
+
+@media screen and (max-width: 1023px){
+    .drug.section{
+        padding: 40px 0;
+    }
+    .drug__subtitle{
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    .drug__cont{
+        width: 100%;
+        height: 208px;
+        margin-top: 30px;
+    }
+    .drug__cont-pack{
+        width: 216px;
+    }
+    .drug__cont-food{
+        width: 222px;
+    }
+    .drug__cont-desc{
+        font-size: 16px;
+        &_margin{
+            margin-right: -10px;
+        }
+    }
+    .drug__description{
+        font-size: 16px;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .drug.section{
+        padding: 30px 0;
+    }
+    .drug__subtitle{
+        font-size: 18px;
+    }
+    .drug__cont{
+        background-image: none;
+        height: auto;
+        width: 100%;
+        margin-top: 20px;
+    }
+    .drug__cont-cent{
+        width: 50px;
+        height: 50px;
+        border: 5px solid #e3e9f3;
+        margin: 0 10px;
+    }
+    .drug__cont-equally{
+        font-size: 43px;
+    }
+    .drug__cont-pack{
+        margin: 0;
+    }
+    .drug__cont-food{
+        margin: 0;
+    }
+    .drug__description br{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 639px){
+    .drug__cont{
+        flex-direction: column;
+        align-items: center;
+    }
+    .drug__cont-cent{
+        margin: 10px 0;
+    }
+    .drug__cont-pack{
+        margin-left: -50px;
+    }
+    .drug__description{
+        margin-top: 5px;
+    }
+    .drug .title br{
+        display: none;
+    }
+    .drug__subtitle br {
+        display: none;
+    }
+}
