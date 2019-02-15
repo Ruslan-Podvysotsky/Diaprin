@@ -155,6 +155,9 @@
 }
 
 @media screen and (max-width: 639px){
+    .drug.section{
+        padding: 25px 0;
+    }
     .drug__cont{
         flex-direction: column;
         align-items: center;
