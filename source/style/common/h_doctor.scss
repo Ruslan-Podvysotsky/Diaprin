@@ -1,14 +1,34 @@
 .doctor{
     padding: 0;
+    &.section_elem::before{
+        top: -135px;
+    }
+    &.section_elem::after{
+        bottom: -139px;
+    }
+    & .title{
+        position: relative;
+        z-index: 10;
+    }
     &__cont{
         margin-top: 30px;
         width: 100%;
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-end;
         position: relative;
     }
+    &__img{
+        width: 425px;
+        height: 689px;
+        position: absolute;
+        z-index: 10;
+        left: 88px;
+        bottom: -133px;
+    }
     &__text{
-        width: 570px;
+        width: 574px;
+        margin-top: 27px;
+        z-index: 10;
     }
     &__name{
         font-size: 24px;
@@ -19,19 +39,74 @@
         font-size: 18px;
         color: #555555;
         font-style: italic;
-        margin-top: 5px;
+        margin-top: 8px;
     }
     &__line{
-        margin-top: 26px;
+        margin-top: 25px;
         width: 30px;
         height: 4px;
         background-color: #3e599b;
     }
     &__description{
         font-size: 18px;
-        margin-top: 26px;
+        margin-top: 23px;
         line-height: 28px;
         color: #444444;
+        &:last-child{
+            margin-top: 28px;
+        }
     }
+}
 
+@media screen and (max-width: 1199px){
+    .doctor.section{
+        padding: 0;
+    }
+    .doctor__img{
+        left:  -12px;
+        bottom: -142px;
+    }
+}
+
+@media screen and (max-width: 1023px){
+    .doctor.section{
+        padding: 40px 0;
+    }
+    .doctor__img{
+        display: none;
+    }
+    .doctor__cont{
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .doctor__text{
+        margin-top: 0;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .doctor__line{
+        margin-top: 15px;
+    }
+    .doctor__description{
+        margin-top: 15px;
+    }
+    .doctor__description:last-child{
+        margin-top: 15px;
+    }
+}
+@media screen and (max-width: 767px){
+    .doctor.section{
+        padding: 30px 0;
+    }
+    .doctor__description{
+        font-size: 16px;
+        line-height: 22px;
+    }
+}
+@media screen and (max-width: 639px){
+    .doctor.section{
+        padding: 25px 0;
+    }
 }
