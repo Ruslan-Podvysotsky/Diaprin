@@ -321,6 +321,10 @@
         width: 40px;
         height: 40px;
     }
+    .slick-prev, .slick-prev:focus, .slick-next, .slick-next:focus{
+        width: 40px;
+        height: 40px;
+    }
 }
 
 @media screen and (max-width: 767px){

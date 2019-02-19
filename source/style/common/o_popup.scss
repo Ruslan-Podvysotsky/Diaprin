@@ -1,0 +1,68 @@
+.popup {
+    width: 832px;
+    padding: 30px 65px;
+    background-color: #f2f4f6;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    background-image: url(../img/header_circle.png);
+    background-repeat: no-repeat;
+    background-size: 2190px;
+    background-position: -478px -10px;
+    box-sizing: border-box;
+    &__img {
+        width: 432px;
+        position: relative;
+
+    }
+
+    &__man {
+        position: absolute;
+        width: 440px;
+        left: -56px;
+        top: -2px;
+
+    }
+
+    &__product {
+        left: 90px;
+        width: 320px;
+
+        &-two {
+            top: 45px;
+            width: 220px;
+            left: -145px;
+        }
+    }
+}
+
+.ever-popup__inner{
+    padding-top: 0 !important;
+}
+.ever-popup__close{
+    top: 20px !important;
+    right: 10px !important;
+}
+.ever-popup__close:after, .ever-popup__close:before{
+    background-color: #fd3232 !important;
+    height: 5px !important;
+}
+
+@media screen and (max-width: 1023px){
+    .popup__img{
+        display: none;
+    }
+    .popup{
+        background: none;
+        width: 270px;
+        padding: 20px 0 0;
+    }
+
+}
+
+@media screen and (max-width: 479px){
+    .ever-popup__close{
+        top: 0 !important;
+        right: 0 !important;
+    }
+}

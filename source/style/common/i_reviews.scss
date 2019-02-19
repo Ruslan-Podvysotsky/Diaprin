@@ -134,6 +134,9 @@
             &.active::before{
                 content: '-';
             }
+            &.active{
+                background-color: #3e599b;
+            }
         }
     }
 }
